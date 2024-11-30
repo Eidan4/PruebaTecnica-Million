@@ -144,7 +144,7 @@ const PropertyDetail = () => {
 
         {/* Sección de trazos */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-5">
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1 pl-8">
             <h3 className="text-lg font-bold mb-4">
               {translation.propertyDetail.reviews.title}
             </h3>
