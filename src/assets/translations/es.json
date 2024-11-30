@@ -1,0 +1,69 @@
+{
+    "heroSection": {
+        "title": "Bienvenido a",
+        "highlight": "nuestra plataforma",
+        "subtitle": "Explora y gestiona tus propiedades fácilmente.",
+        "button": "Comenzar"
+    },
+    "footer": {
+        "quickLinks": "Enlaces rápidos",
+        "privacyPolicy": "Política de Privacidad",
+        "equalHousing": "Igualdad de oportunidades en la vivienda",
+        "adaCompliance": "Cumplimiento de la ADA",
+        "about": "Sobre MILLION",
+        "aboutDescription": "Bienvenido a MILLION, una boutique inmobiliaria de lujo ubicada en el sur de Florida, dedicada a ofrecer propiedades exclusivas para una clientela de élite. Atendemos a ejecutivos de alto nivel, familias adineradas, celebridades y atletas profesionales de todo el mundo, brindando un servicio que combina confidencialidad, atención personalizada y excelencia. En MILLION, entendemos las necesidades únicas de nuestros clientes y manejamos cada transacción con la máxima discreción. Nuestro servicio de conserjería representa el estándar más alto de atención personalizada, ofreciendo mucho más que apoyo inmobiliario tradicional.",
+        "connect": "Conéctate con MILLION",
+        "phone": "+57 321 389 68 64",
+        "email": "eidanjoelruizpinzon@gmail.com",
+        "copyright": "&copy; 2024 Eidan. Todos los derechos son reservados."
+    },
+    "propertiesPage": {
+        "title": "Propiedades",
+        "filters": {
+            "name": "Nombre de la propiedad",
+            "address": "Dirección de la propiedad",
+            "minPrice": "Precio mínimo",
+            "maxPrice": "Precio máximo",
+            "filterButton": "Filtrar"
+        },
+        "placeholders": {
+            "name": "Todas las propiedades",
+            "address": "Todos los estados",
+            "minPrice": "0",
+            "maxPrice": "Sin límite"
+        },
+        "loading": "Cargando...",
+        "noResults": "No se encontraron propiedades."
+    },
+    "propertyDetail": {
+        "loading": "Cargando...",
+        "noPropertyFound": "No se encontró la propiedad.",
+        "reviews": {
+            "title": "Oferta de Propiedad",
+            "value": "Valor",
+            "noTraces": "No se encontraron rastros de esta propiedad"
+        },
+        "map": {
+            "title": "Ubicación"
+        },
+        "propertyInfo": {
+            "internalCode": "Código interno:"
+        },
+        "traceForm": {
+            "success": "PropertyTrace creado con éxito.",
+            "error": "Hubo un error al crear el PropertyTrace.",
+            "successMessage":"Aceptar"
+        }
+    },
+    "traceForm": {
+        "title": "Comprar propiedad",
+        "namePlaceholder": "Nombre",
+        "valuePlaceholder": "Valor",
+        "taxPlaceholder": "Impuesto",
+        "dateLabel": "Fecha de Venta",
+        "submitButton": "Comprar propiedad"
+    },
+    "header": {
+    "home": "Inicio"
+    }
+}

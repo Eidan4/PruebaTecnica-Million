@@ -1,0 +1,9 @@
+.hero-wave-section {
+  position: relative;
+  background-color: #360a53; /* Fondo continuo */
+  overflow: hidden; /* Evita que sobresalgan elementos */
+  height: auto; /* Ajusta según el contenido */
+  z-index: 0; /* Envía el pseudo-elemento detrás del contenido */
+  margin: 0; /* Asegúrate de que no haya márgenes entre los hijos */
+  padding: 0; 
+}

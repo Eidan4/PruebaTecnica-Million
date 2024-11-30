@@ -1,0 +1,7 @@
+
+.svg-background {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: transparent; /* Asegúrate de que no sobrescriba el fondo */
+}

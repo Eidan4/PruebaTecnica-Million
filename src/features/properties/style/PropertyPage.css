@@ -1,0 +1,95 @@
+.properties-page {
+  padding: 20px;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.properties-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.filters {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.filters-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 250px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.filter-button {
+  background-color: #9945ed;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #7c3aed;
+}
+
+.properties-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 100%;
+  max-width: 1200px;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+}
+
+.hero-wave-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Asegura que cubra toda la altura */
+  pointer-events: none; /* Permite interacción con el contenido */
+  background: radial-gradient(circle at var(--x) var(--y), #9945ED 0.5%, rgba(0, 255, 0, 0) 40%);
+  opacity: 0.35; /* Ajusta la intensidad del efecto */
+  z-index: -1; /* Envía el pseudo-elemento detrás del contenido */
+  transition: background 0.3s ease;
+}

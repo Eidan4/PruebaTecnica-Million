@@ -1,0 +1,69 @@
+{
+  "heroSection": {
+    "title": "Welcome to",
+    "highlight": "our platform",
+    "subtitle": "Explore and manage your properties easily.",
+    "button": "Get Started"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "privacyPolicy": "Privacy Policy",
+    "equalHousing": "Equal Housing Opportunity",
+    "adaCompliance": "ADA Compliance",
+    "about": "About MILLION",
+    "aboutDescription": "Welcome to MILLION, a luxury real estate boutique located in South Florida, dedicated to offering exclusive properties to an elite clientele. We serve high-level executives, wealthy families, celebrities, and professional athletes worldwide, providing a service that combines confidentiality, personalized attention, and excellence. At MILLION, we understand the unique needs of our clients and handle every transaction with utmost discretion. Our concierge service represents the highest standard of personalized attention, offering much more than traditional real estate support.",
+    "connect": "Connect with MILLION",
+    "phone": "+57 321 389 68 64",
+    "email": "eidanjoelruizpinzon@gmail.com",
+    "copyright": "&copy; 2024 Eidan. All rights reserved."
+  },
+  "propertiesPage": {
+    "title": "Properties",
+    "filters": {
+      "name": "Property Name",
+      "address": "Property Address",
+      "minPrice": "Minimum Price",
+      "maxPrice": "Maximum Price",
+      "filterButton": "Filter"
+    },
+    "placeholders": {
+      "name": "All properties",
+      "address": "All states",
+      "minPrice": "0",
+      "maxPrice": "No limit"
+    },
+    "loading": "Loading...",
+    "noResults": "No properties found."
+  },
+  "propertyDetail": {
+    "loading": "Loading...",
+    "noPropertyFound": "Property not found.",
+    "reviews": {
+      "title": "Property Offer",
+      "value": "Value",
+      "noTraces": "No traces were found for this property."
+    },
+    "map": {
+      "title": "Location"
+    },
+    "propertyInfo": {
+      "internalCode": "Internal code:"
+    },
+    "traceForm": {
+      "success": "PropertyTrace created successfully.",
+      "error": "There was an error creating the PropertyTrace.",
+      "successMessage":"Accept"
+    }
+  },
+  "traceForm": {
+    "title": "Buy Property",
+    "namePlaceholder": "Name",
+    "valuePlaceholder": "Value",
+    "taxPlaceholder": "Tax",
+    "dateLabel": "Sale Date",
+    "submitButton": "Buy Property"
+  },
+  "header": {
+    "home": "Home"
+  }
+}

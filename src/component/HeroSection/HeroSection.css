@@ -1,0 +1,41 @@
+.hero-container {
+  position: relative;
+  text-align: center;
+  padding: 50px 20px 0; /* Ajusta el relleno */
+  background-color: transparent; /* Fondo transparente para usar el del contenedor */
+  margin: 0; /* Elimina márgenes innecesarios */
+  z-index: 1; /* Asegura que esté por encima del pseudo-elemento */
+}
+  
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff; /* Texto en blanco */
+    margin-bottom: 20px;
+  }
+  
+  .hero-title .highlight {
+    color: #e0aaff; /* Un púrpura claro que combina con el fondo */
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+    color: #dcdcdc; /* Un gris claro */
+    margin-bottom: 20px;
+  }
+  
+  .hero-button {
+    background-color: #5e17eb; /* Botón púrpura */
+    color: #ffffff; /* Texto en blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #7c3aed; /* Cambia de color al pasar el puntero */
+  }
+
