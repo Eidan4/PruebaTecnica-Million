@@ -48,6 +48,7 @@ const TraceForm = ({ propertyId, onSubmit}) => {
           className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm"
           value={formData.name}
           onChange={handleInputChange}
+          maxLength={20}
         />
         <input
           type="number"
@@ -57,6 +58,8 @@ const TraceForm = ({ propertyId, onSubmit}) => {
           className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm"
           value={formData.value}
           onChange={handleInputChange}
+          max={10000000}
+          min={1}
         />
         <input
           type="number"
@@ -66,6 +69,9 @@ const TraceForm = ({ propertyId, onSubmit}) => {
           className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm"
           value={formData.tax}
           onChange={handleInputChange}
+          max={10000000}
+          min={0}
+          step="0.01"
         />
         <label htmlFor="dateSale" className="block text-sm font-medium text-gray-700">
           {translation.traceForm.dateLabel}
@@ -76,6 +82,7 @@ const TraceForm = ({ propertyId, onSubmit}) => {
           required
           className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm"
           value={formData.dateSale}
+          min={new Date().toISOString().split("T")[0]} // Establece la fecha mínima como hoy
           onChange={handleInputChange}
         />
         <button

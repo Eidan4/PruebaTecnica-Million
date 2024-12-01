@@ -39,9 +39,9 @@
     "loading": "Loading...",
     "noPropertyFound": "Property not found.",
     "reviews": {
-      "title": "Property Offer",
+      "title": "Property Offers",
       "value": "Value",
-      "noTraces": "No traces were found for this property."
+      "noTraces": "No offerts were found for this property."
     },
     "map": {
       "title": "Location"
@@ -56,12 +56,12 @@
     }
   },
   "traceForm": {
-    "title": "Buy Property",
+    "title": "Offert Property",
     "namePlaceholder": "Name",
     "valuePlaceholder": "Value",
     "taxPlaceholder": "Tax",
     "dateLabel": "Sale Date",
-    "submitButton": "Buy Property"
+    "submitButton": "Offert Property"
   },
   "header": {
     "home": "Home"

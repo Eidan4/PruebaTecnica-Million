@@ -39,9 +39,10 @@
         "loading": "Cargando...",
         "noPropertyFound": "No se encontró la propiedad.",
         "reviews": {
-            "title": "Oferta de Propiedad",
+            "title": "Ofertas de Propiedad",
             "value": "Valor",
-            "noTraces": "No se encontraron rastros de esta propiedad"
+            "noTraces": "No se encontraron ofertas de esta propiedad"
+            
         },
         "map": {
             "title": "Ubicación"
@@ -56,12 +57,12 @@
         }
     },
     "traceForm": {
-        "title": "Comprar propiedad",
+        "title": "Ofertar propiedad",
         "namePlaceholder": "Nombre",
         "valuePlaceholder": "Valor",
         "taxPlaceholder": "Impuesto",
         "dateLabel": "Fecha de Venta",
-        "submitButton": "Comprar propiedad"
+        "submitButton": "Ofertar propiedad"
     },
     "header": {
     "home": "Inicio"

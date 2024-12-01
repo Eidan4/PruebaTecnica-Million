@@ -11,25 +11,29 @@ const Header = ({ isDark = false }) => {
 
   return (
     <div className="bg-transparent top-0 left-0 w-full z-50">
-      <div className="container mx-auto flex justify-between items-center py-4 px-6">
+      <div className="container mx-auto max-w-screen-xl flex justify-between items-center py-4 px-6">
         {/* Logo */}
-        <div className="absolute left-0 top-4 px-6">
+        <div className="flex items-center">
           <Link to="/" aria-label={translation.header.home}>
             <img src={logoSrc} alt="Macondo Logo" className="h-8" />
           </Link>
         </div>
 
         {/* Selector de idioma */}
-        <div className="flex items-center space-x-4 absolute right-0 top-4 px-6">
+        <div className="flex items-center space-x-4">
           <button
             onClick={() => switchLanguage("en")}
-            className={`text-sm ${language === "en" ? "font-bold" : "font-normal"} ${isDark ? 'text[#000000]' : 'text-white'} text-gray-600 hover:text-gray-900`}
+            className={`text-sm ${language === "en" ? "font-bold" : "font-normal"} ${
+              isDark ? "text-black" : "text-white"
+            } hover:text-gray-900`}
           >
             English
           </button>
           <button
             onClick={() => switchLanguage("es")}
-            className={`text-sm ${language === "es" ? "font-bold" : "font-normal"} ${isDark ? 'text[#000000]' : 'text-white'}  text-gray-600 hover:text-gray-900`}
+            className={`text-sm ${language === "es" ? "font-bold" : "font-normal"} ${
+              isDark ? "text-black" : "text-white"
+            } hover:text-gray-900`}
           >
             Español
           </button>

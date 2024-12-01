@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 
 import "./HeroWaveSection.css";
 import HeroSection from "../HeroSection/HeroSection";
-import WaveSVG from "../WaveSVG/WaveSVG";
 import Header from "../Header/Header";
 
 const HeroWaveSection = () => {
@@ -24,7 +23,6 @@ const HeroWaveSection = () => {
     >
       <Header />
       <HeroSection />
-      <WaveSVG />
     </div>
   );
 };

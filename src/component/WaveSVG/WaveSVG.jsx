@@ -6,7 +6,7 @@ const WaveSVG = ({ fill = "#fefefe", fillOpacity = "1" }) => {
     <div className="svg-background-container bg-transparent">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
+        viewBox="0 0 1440 220"
         className="svg-background"
       >
         <path

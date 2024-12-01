@@ -91,9 +91,10 @@ const PropertyDetail = () => {
         <Header isDark={true} />
       </div>
 
-      <div className="px-[200px]">
+      {/* Contenedor centralizado con límite */}
+      <div className="max-w-screen-xl mx-auto">
         {/* Sección de imágenes y formulario */}
-        <div className="property-detail-container grid grid-cols-1 lg:grid-cols-5 gap-6 p-5">
+        <div className="property-detail-container grid grid-cols-1 lg:grid-cols-5 gap-6">
           <div className="lg:col-span-3 flex flex-col">
             <div className="flex-1 grid gap-4">
               <div>
@@ -143,8 +144,8 @@ const PropertyDetail = () => {
         </div>
 
         {/* Sección de trazos */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-5">
-          <div className="lg:col-span-1 pl-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="lg:col-span-1">
             <h3 className="text-lg font-bold mb-4">
               {translation.propertyDetail.reviews.title}
             </h3>
@@ -163,8 +164,7 @@ const PropertyDetail = () => {
                     <div>
                       <p className="font-bold">{trace.Name}</p>
                       <p className="text-gray-500">
-                        {translation.propertyDetail.reviews.value}: $
-                        {trace.Value.toFixed(2)}
+                        {translation.propertyDetail.reviews.value}: $ {trace.Value.toFixed(2)}
                       </p>
                     </div>
                   </div>
@@ -197,7 +197,7 @@ const PropertyDetail = () => {
             </h2>
             <button
               onClick={handleModalAccept}
-              className="w-full bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600"
+              className="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600"
             >
               {translation.propertyDetail.traceForm.successMessage}
             </button>

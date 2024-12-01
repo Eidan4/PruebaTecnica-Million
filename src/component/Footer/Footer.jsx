@@ -7,8 +7,8 @@ const Footer = () => {
   const { translation } = useTranslation(); // Obtén las traducciones del contexto
 
   return (
-    <footer className="bg-gray-100 text-gray-700 pt-10 pb-5">
-      <div className="container mx-auto px-5">
+    <footer className="bg-gray-100 text-gray-700 pt-10 pb-5 w-full">
+      <div className="max-w-screen-xl mx-auto">
         {/* Logos */}
         <div className="flex justify-between items-center border-b pb-5 mb-5">
           <img
@@ -62,32 +62,18 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4">{translation.footer.connect}</h3>
             <div className="flex space-x-4 mb-4">
               <a
-                href="#"
+                href="https://www.facebook.com/milllionluxury"
                 className="text-purple-700 hover:text-purple-900"
                 aria-label="Facebook"
               >
                 <FaFacebookF className="w-6 h-6" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/milllionluxury/"
                 className="text-purple-700 hover:text-purple-900"
                 aria-label="Instagram"
               >
                 <FaInstagram className="w-6 h-6" />
-              </a>
-              <a
-                href="#"
-                className="text-purple-700 hover:text-purple-900"
-                aria-label="LinkedIn"
-              >
-                <FaLinkedinIn className="w-6 h-6" />
-              </a>
-              <a
-                href="#"
-                className="text-purple-700 hover:text-purple-900"
-                aria-label="TikTok"
-              >
-                <FaTiktok className="w-6 h-6" />
               </a>
             </div>
             <p className="text-sm">{translation.footer.phone}</p>

@@ -1,11 +1,15 @@
 .properties-page {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 20px; /* Espaciado entre los bloques principales */
 }
 
 .title {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 2rem; /* Escala el tamaño para pantallas más pequeñas */
 }
 
 .properties-container {
@@ -13,25 +17,27 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  width: 100%;
 }
 
 .filters {
   width: 100%;
   max-width: 1200px;
+  padding: 0 15px; /* Espaciado lateral en pantallas pequeñas */
 }
 
 .filters-form {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   align-items: flex-end;
+  width: 100%;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 250px;
 }
 
 .form-group label {
@@ -44,6 +50,7 @@
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 14px;
 }
 
 .filter-button {
@@ -54,6 +61,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 100%; /* El botón ocupa todo el ancho disponible */
 }
 
 .filter-button:hover {
@@ -66,6 +74,7 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   width: 100%;
   max-width: 1200px;
+  padding: 0 15px; /* Espaciado lateral para mantener márgenes en pantallas pequeñas */
 }
 
 .loading-spinner {
@@ -86,10 +95,76 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; /* Asegura que cubra toda la altura */
-  pointer-events: none; /* Permite interacción con el contenido */
+  height: 100%;
+  pointer-events: none;
   background: radial-gradient(circle at var(--x) var(--y), #9945ED 0.5%, rgba(0, 255, 0, 0) 40%);
-  opacity: 0.35; /* Ajusta la intensidad del efecto */
-  z-index: -1; /* Envía el pseudo-elemento detrás del contenido */
+  opacity: 0.35;
+  z-index: -1;
   transition: background 0.3s ease;
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .filters-form {
+    grid-template-columns: 1fr; /* Los inputs ocupan toda la línea */
+  }
+
+  .filter-button {
+    padding: 10px;
+    font-size: 16px; /* Aumenta el tamaño del botón para móviles */
+  }
+
+  .properties-grid {
+    grid-template-columns: 1fr; /* Solo muestra una columna para móviles */
+  }
+
+  .title {
+    font-size: 1.5rem; /* Reduce el tamaño del título */
+  }
+}
+
+/* Responsivo para pantallas medianas */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .filters-form {
+    grid-template-columns: repeat(2, 1fr); /* Muestra 2 columnas de inputs */
+  }
+
+  .properties-grid {
+    grid-template-columns: repeat(2, 1fr); /* Muestra 2 tarjetas por fila */
+  }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1025px) {
+  .filters-form {
+    grid-template-columns: repeat(4, 1fr); /* Muestra 4 columnas de inputs */
+  }
+
+  .properties-grid {
+    grid-template-columns: repeat(4, 1fr); /* Muestra 4 tarjetas por fila */
+  }
+
+  .button-filter {
+    width: 10%;
+  }
+
+}
+
+
+@media (min-width: 750px) and (max-width: 1020px) {
+  .filters-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas principales */
+    gap: 20px;
+    align-items: center; /* Alinea verticalmente */
+  }
+
+  .filters-form .form-group:nth-child(4) {
+    grid-column: 1 / 2; /* El cuarto input se alinea con la primera columna */
+  }
+
+  .filters-form .filter-button {
+    grid-column: 3 / 4; /* El botón de filtro se coloca en la última columna */
+    justify-self: start; /* Asegura que el botón se alinee a la izquierda de su celda */
+  }
 }
